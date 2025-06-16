@@ -24,48 +24,48 @@ int main() {
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
     
     //Usuário insere os dados da primeira carta
-    printf("\nDigite o nome da cidade da primeira carta: ");
-    scanf(" %s", nome1);
-
-    printf("\nDigite a letra do estado da primeira carta: ");
+    printf("Digite a letra do estado da primeira carta: ");
     scanf(" %c", &letraEstado1);
 
-    printf("\nDigite o código da primeira carta: ");
+    printf("Digite o código da primeira carta: ");
     scanf(" %s", codigoCidade1);
 
-    printf("\nDigite a população da primeira carta: ");
-    scanf("%d", &populacao1);
+    printf("Digite o nome da cidade da primeira carta: ");
+    scanf(" %s", nome1);
 
-    printf("\nDigite a área da primeira carta: ");
-    scanf("%f", &area1);
+    printf("Digite a população da primeira carta: ");
+    scanf(" %d", &populacao1);
 
-    printf("\nDigite o PIB da primeira carta: ");
-    scanf("%f", &pIB1);
+    printf("Digite a área da primeira carta: ");
+    scanf(" %f", &area1);
 
-    printf("\nDigite o número de pontos turísticos da primeira carta: ");
-    scanf("%d", &nPontosTuristicos1);
+    printf("Digite o PIB da primeira carta: ");
+    scanf(" %f", &pIB1);
+
+    printf("Digite o número de pontos turísticos da primeira carta: ");
+    scanf(" %d", &nPontosTuristicos1);
     
-    //Usuário insere os dados da segunda carta
-    printf("\nDigite o nome da cidade da segunda carta: ");
-    scanf(" %s", nome2);
-  
-    printf("\nDigite a letra do estado da segunda carta: ");
+    //Usuário insere os dados da segunda carta 
+    printf("Digite a letra do estado da segunda carta: ");
     scanf(" %c", &letraEstado2);
 
-    printf("\nDigite o código da segunda carta: ");
+    printf("Digite o código da segunda carta: ");
     scanf(" %s", codigoCidade2);
 
-    printf("\nDigite a população da segunda carta: ");
-    scanf("%d", &populacao2);
+    printf("Digite o nome da cidade da segunda carta: ");
+    scanf(" %s", nome2);
 
-    printf("\nDigite a área da segunda carta: ");
-    scanf("%f", &area2);
+    printf("Digite a população da segunda carta: ");
+    scanf(" %d", &populacao2);
 
-    printf("\nDigite o PIB da segunda carta: ");
-    scanf("%f", &pIB2);
+    printf("Digite a área da segunda carta: ");
+    scanf(" %f", &area2);
 
-    printf("\nDigite o número de pontos turísticos da segunda carta: ");
-    scanf("%d", &nPontosTuristicos2);
+    printf("Digite o PIB da segunda carta: ");
+    scanf(" %f", &pIB2);
+
+    printf("Digite o número de pontos turísticos da segunda carta: ");
+    scanf(" %d", &nPontosTuristicos2);
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
