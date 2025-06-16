@@ -10,8 +10,9 @@ int main() {
     
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    int populacao1, nPontosTuristicos1, populacao2, nPontosTuristicos2;
-    float area1, pIB1, densidade1, pIBpC1, area2, pIB2, densidade2, pIBpC2;
+    int nPontosTuristicos1, nPontosTuristicos2;
+    unsigned int populacao1, populacao2;
+    float area1, pIB1, densidade1, pIBpC1, super1, area2, pIB2, densidade2, pIBpC2, super2;
     char nome1[30]; 
     char nome2[30];
     char codigoCidade1[4];
@@ -49,6 +50,8 @@ int main() {
     densidade1 = (float)populacao1/area1;
     //multiplicando o pib por 1 bilhão antes de fazer of cálculo
     pIBpC1 = (pIB1*1000000000)/(float)populacao1;
+    //Cálculo do super poder
+    super1 = (float)populacao1 + (float)nPontosTuristicos1 + (1/densidade1) + pIB1 + area1 + pIBpC1;
     
     //Usuário insere os dados da segunda carta 
     printf("Digite a letra do estado da segunda carta: ");
@@ -76,16 +79,18 @@ int main() {
     densidade2 = (float)populacao2/area2;
     //multiplicando o pib por 1 bilhão antes de fazer of cálculo
     pIBpC2 = (pIB2*1000000000)/(float)populacao2;
+    //Cálculo do super poder
+    super2 = (float)populacao2 + (float)nPontosTuristicos2 + (1/densidade2) + pIB2 + area2 + pIBpC2;
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
     
     //Exibe os valores da primeira carta
-    printf("Carta 1:\n - Estado: %c \n - Código: %s\n - Nome da Cidade: %s\n - Polulação: %d habitantes\n - Área: %.2f km²\n - PIB: %.2f bilhões de reais\n - Número de Pontos Turísticos: %d\n - Densidade Populacional: %.2f hab/km²\n - PIB per Capita: %.2f reais\n", letraEstado1, codigoCidade1, nome1, populacao1, area1, pIB1, nPontosTuristicos1, densidade1, pIBpC1);
+    printf("Carta 1:\n - Estado: %c \n - Código: %s\n - Nome da Cidade: %s\n - Polulação: %d habitantes\n - Área: %.2f km²\n - PIB: %.2f bilhões de reais\n - Número de Pontos Turísticos: %d\n - Densidade Populacional: %.2f hab/km²\n - PIB per Capita: %.2f reais\n - Super Poder: %.2f \n", letraEstado1, codigoCidade1, nome1, populacao1, area1, pIB1, nPontosTuristicos1, densidade1, pIBpC1, super1);
 
     //Exibe os valores da segunda carta
-    printf("\nCarta 2:\n - Estado: %c \n - Código: %s\n - Nome da Cidade: %s\n - Polulação: %d habitantes\n - Área: %.2f km²\n - PIB: %.2f bilhões de reais\n - Número de Pontos Turísticos: %d\n - Densidade Populacional: %.2f hab/km²\n - PIB per Capita: %.2f reais\n", letraEstado2, codigoCidade2, nome2, populacao2, area2, pIB2, nPontosTuristicos2, densidade2, pIBpC2);
+    printf("\nCarta 2:\n - Estado: %c \n - Código: %s\n - Nome da Cidade: %s\n - Polulação: %d habitantes\n - Área: %.2f km²\n - PIB: %.2f bilhões de reais\n - Número de Pontos Turísticos: %d\n - Densidade Populacional: %.2f hab/km²\n - PIB per Capita: %.2f reais\n - Super Poder: %.2f \n", letraEstado2, codigoCidade2, nome2, populacao2, area2, pIB2, nPontosTuristicos2, densidade2, pIBpC2, super2);
 
     return 0;
 }
