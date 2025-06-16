@@ -50,7 +50,7 @@ int main() {
     printf("Carta 1\n - Polulação: %d\n - Área: %f\n - PIB: %f\n - Número de Pontos Turísticos: %d\n", populacao1, area1, pIB1, nPontosTuristicos1);
 
     //Exibe os valores da segunda carta
-    printf("Carta 1\n - Polulação: %d\n - Área: %f\n - PIB: %f\n - Número de Pontos Turísticos: %d\n", populacao2, area2, pIB2, nPontosTuristicos2);
+    printf("Carta 2\n - Polulação: %d\n - Área: %f\n - PIB: %f\n - Número de Pontos Turísticos: %d\n", populacao2, area2, pIB2, nPontosTuristicos2);
 
     return 0;
 }
